@@ -1,0 +1,35 @@
+<!--navbar-->
+<div class="navbar">
+    <p-dropdown [options]="categories"  placeholder="Select a Category" [showClear]="true" (onChange)="selectedType($event)"></p-dropdown>
+</div>
+
+<!--table-part-->
+
+<p-table   [value]="tableData" selectionMode="single"  dataKey="code" responsiveLayout="scroll" >
+   <ng-template pTemplate="header" >
+        <tr class="table-style">
+            <th >
+                Category
+            </th>
+            <th >
+                Name
+            </th>
+            <th >
+                Description
+            </th>
+            <th >
+                price
+            </th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-product>
+        <tr [pSelectableRow]="product"  routerLink="/detail-view/{{product.id}}">
+            <td>{{product.category}}</td>
+            <td>{{product.title}}</td>
+            <td>{{product.description}}</td>
+            <td>{{product.price}}</td>
+        </tr>
+    </ng-template>
+</p-table>
+<!--end-->
+

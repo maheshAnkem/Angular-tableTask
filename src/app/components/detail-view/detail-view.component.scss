@@ -1,0 +1,101 @@
+.container {
+    margin-top: 50px;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    background-color: bisque;
+    margin-top: 0px;
+    
+    .card1 {
+        .price{
+            font-size: 15px;
+            font-weight: bold;
+            width: 80px;
+            height: 30px;
+            background-color: lightgreen;
+            color: green;
+            text-align: center;
+           
+        }
+        .p-descritp{
+            font-size: 20px;
+            .sec-p-decs{
+                
+                font-size: 15px;
+                color: grey;
+                font-family: serif;
+            }
+        }
+        margin-left: 100px;
+        border-radius: 0px;
+        border-radius: 5px;
+    }
+    .img{
+        width: 600px;
+        height: 300px;
+        margin-right:0px;
+        border-radius: 10px;
+        margin: 0px;
+    }
+    .btn-add-to-cart{
+        background-color: ORANGE;
+        color: white;
+        border-width: 0px;
+        height: 40px;
+        width: 130px;
+    }
+    .btn-add-to-cart:hover{
+        background-color: blue;
+        color: white;
+        border-width: 0px;
+        height: 40px;
+        width: 130px;
+    }
+    .btn-add-to-cart:hover{
+    background-color: blue;
+    color: white;
+    border-width: 0px;
+    height: 40px;
+    width: 130px;
+}
+    .btn-buy-now{
+        background-color: orangered;
+        color: white;
+        border-width: 0px;
+        height: 40px;
+        width: 130px;
+        margin-left: 10px;
+    }
+    .btn-buy-now:hover{
+        background-color: blue;
+        color: white;
+        border-width: 0px;
+        height: 40px;
+        width: 130px;
+    }
+    
+}
+.bck-btn{
+    background-color: red;
+    border-radius: 20px;
+    color:white;
+    margin-left: 550px;
+    margin-top: 20px;
+    width: 100px;
+    font-style: bold;
+    // border-color: red;
+    font-weight: 600;
+    border: none;
+    
+    
+    
+}
+.bck-btn:active {
+    
+    transform: translateY(4px);
+    
+}
+
+
+
+  
